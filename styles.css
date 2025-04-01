@@ -198,9 +198,7 @@ article img:hover {
 	header {
 		background-image: url("images/logo 4.png");
 		background-size: contain;
-		background-position: center;
-		margin-left: auto;
-		margin-right: auto;
+		background-position: left center;
 	}
 	header:hover {
 		background-size: contain;
