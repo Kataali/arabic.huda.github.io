@@ -196,8 +196,9 @@ article img:hover {
 		flex-direction: column;
 	}
 	header {
-		background-image: url("images/Artboard 1.png");
+		background-image: url("images/logo 3.png");
 		background-size: contain;
+		background-position: center;
 	}
 
 	footer {
