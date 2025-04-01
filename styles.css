@@ -196,9 +196,14 @@ article img:hover {
 		flex-direction: column;
 	}
 	header {
-		background-image: url("images/logo 3.png");
+		background-image: url("images/logo 4.png");
 		background-size: contain;
 		background-position: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header:hover {
+		background-size: contain;
 	}
 
 	footer {
