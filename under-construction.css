@@ -1,13 +1,9 @@
+/* **************** Elements ********************* */
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
+	margin: 3rem 3%;
 	color: #333;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+	background-color: #f0f0f0;
 	text-align: center;
 }
 img{
@@ -15,20 +11,22 @@ img{
     margin-right: auto;
     border-radius: 1rem;
 }
-.container {
-	background-color: #fff;
-	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
 h1 {
-	font-size: 50px;
+	font-size: 3rem;
 	color: #ee7070;
 }
 p {
-	font-size: 18px;
+	font-size: 1rem;
 	color: #666;
 }
+footer {
+	animation: downtop 900ms 350ms backwards;
+	padding-top: 5rem;
+	display: flex;
+}
+
+
+/* **************** Classes ********************* */
 .btn {
 	display: block;
 	margin-top: 20px;
@@ -42,6 +40,67 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.container {
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
+
+/* **************** ID Selectors ********************* */
+#footer-text {
+	border-top: 0.1rem solid;
+	border-right: 0.1rem solid;
+	text-align: right;
+	padding-right: 1rem;
+}
+#footer-logo {
+	border-bottom: 0.1rem solid;
+	border-left: 0.1rem solid;
+	text-align: left;
+	padding-left: 1rem;
+}
+
+
+/* **************** Combination Selectors ********************* */
+/* Descendant Selectors */
+footer div {
+	flex: 1;
+}
+
+
+/* **************** Pseudo ********************* */
 .btn:hover {
 	background-color: #f03434;
+}
+#footer-text:hover {
+	border-top: 0.3rem solid;
+	border-right: 0.3rem solid;
+	transition: 0.3s;
+}
+#footer-logo:hover {
+	border-bottom: 0.3rem solid;
+	border-left: 0.3rem solid;
+	transition: 0.5s;
+}
+
+
+/* **************** Mobile Responsive ********************* */
+@media (max-width: 625px) {
+	.form-container{
+		width: 100%;
+		margin: 0;
+	}
+	footer {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	#footer-text {
+		text-align: center;
+	}
+	#footer-logo {
+		text-align: center;
+	}
 }

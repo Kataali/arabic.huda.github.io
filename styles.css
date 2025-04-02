@@ -1,4 +1,4 @@
-/***************** Elements **********************/
+/* **************** Elements ********************* */
 header {
 	margin: 1rem;
 	padding: 5rem;
@@ -42,6 +42,7 @@ footer {
 	display: flex;
 }
 
+
 /***************** Classes **********************/
 .normal-banner:nth-of-type(2) {
 	margin-left: 1rem;
@@ -69,11 +70,21 @@ footer {
 	cursor: pointer;
 	border-radius: 2rem;
 }
+
+
 /***************** IDs **********************/
 #get-started-button {
 	width: 20rem;
 	border-radius: 0.5rem;
 	margin-top: 2rem;
+}
+#promotion-section {
+	border-radius: 1rem;
+	padding: 1rem;
+	background-image: url("images/ayat.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
 }
 #woman-pic {
 	width: 30%;
@@ -86,26 +97,22 @@ footer {
 	text-align: right;
 	padding-right: 1rem;
 }
-
-#promotion-section {
-	border-radius: 1rem;
-	padding: 1rem;
-	background-image: url("images/ayat.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	color: white;
-}
 #footer-logo {
 	border-bottom: 0.1rem solid;
 	border-left: 0.1rem solid;
 	text-align: left;
 	padding-left: 1rem;
 }
+
+
 /***************** Combinations **********************/
+/* Child Selectors */
 header > img {
 	display: block;
 	margin: 0 auto;
 }
+
+/* Descendant Selectors */
 nav ul {
 	list-style: none;
 	text-align: center;
@@ -165,6 +172,7 @@ article img:hover {
 	transition: 0.5s;
 }
 
+
 /***************** Animations **********************/
 @keyframes topdown {
 	0% {
@@ -189,7 +197,8 @@ article img:hover {
 	}
 }
 
-/***************** Mobile **********************/
+/***************** Responsive Rules **********************/
+/* This dictates the look and feel of the site when viewed on a mobile device */
 @media (max-width: 625px) {
 	nav {
 		flex-direction: column;
@@ -202,12 +211,10 @@ article img:hover {
 	header:hover {
 		background-size: contain;
 	}
-
 	footer {
 		flex-direction: column;
 		gap: 1.5rem;
 	}
-
 	.normal-banner {
 		margin: 1rem 0px;
 	}
@@ -215,12 +222,10 @@ article img:hover {
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
-
 	#get-started-button {
 		width: 10rem;
 		margin-top: 1rem;
 	}
-
 	#woman-pic {
 		display: block;
 		float: none;
@@ -228,20 +233,16 @@ article img:hover {
 		margin-right: auto;
 		width: 70%;
 	}
-
 	#promotion {
 		flex-direction: column;
 		gap: 2rem;
 	}
-
 	#others {
 		flex-direction: column;
 	}
-
 	#footer-text {
 		text-align: center;
 	}
-
 	#footer-logo {
 		text-align: center;
 	}
